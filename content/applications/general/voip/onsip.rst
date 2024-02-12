@@ -5,13 +5,10 @@ Use VoIP services in Odoo with OnSIP
 Introduction
 ============
 
-Odoo VoIP can be set up to work together with `OnSIP <https://www.onsip.com/>`_. In this case, the
-installation and setup of an Asterisk server is not necessary as the whole infrastructure is hosted
-and managed by OnSIP.
-
-An account is needed with OnSIP to use this service. Before doing so, make sure that the company's
-home area and the areas that will be called to are covered by OnSIP services. After opening an OnSIP
-account, follow the configuration procedure below to configure on an Odoo database.
+Odoo VoIP can be set up to work together with `OnSIP <https://www.onsip.com/>`_. An account is
+needed with OnSIP to use this service. Before doing so, make sure that the company's home area and
+the areas that will be called to are covered by OnSIP services. After opening an OnSIP account,
+follow the configuration procedure below to configure on an Odoo database.
 
 Configuration
 =============
@@ -110,7 +107,7 @@ Troubleshooting
 
 .. tip::
    If a *Missing Parameters* message apprears in the Odoo softphone, make sure to refresh the Odoo
-   browserwindow and try again.
+   browser window (or tab) and try again.
 
    .. image:: onsip/onsip04.png
       :align: center
@@ -127,12 +124,13 @@ Troubleshooting
 
     E.g.: `+16506913277` (where `+1` is the international prefix for the United States).
 
-   For a list of comprehensive country codes, visit: `https://countrycode.org
-   <https://countrycode.org>`_.
-
    .. image:: onsip/onsip05.png
       :align: center
       :alt: Incorrect number message populated in the Odoo VoIP widget.
+
+   .. seealso::
+      For a list of comprehensive country codes, visit: `https://countrycode.org
+      <https://countrycode.org>`_.
 
 OnSIP on Your Cell Phone
 ========================
@@ -143,42 +141,5 @@ on-the-go calls, but also to make sure to hear incoming calls, or simply for con
 softphone will work.
 
 .. seealso::
-   :doc:`devices_integrations`
-
-Grandstream Wave
-----------------
-
-.. important::
-   A Grandstream Wave account is necessary to utilize the following integration. This includes a
-   networked PBX hardware integration from Grandstream (e.g. Grandstream UCM63XX series IP PBX).
-
-On Android and iOS devices, OnSIP has been successfully tested with `Grandstream Wave
-<https://www.grandstream.com/products/ucm6300-ecosystem/product/wave>`_. It is available on `Apple
-iOS <https://apps.apple.com/us/app/grandstream-wave/id1523254549>`_ and `Android
-<https://play.google.com/store/apps/details?id=com.grandstream.ucm&pcampaignid=web_share>`_
-platforms. First sign into the Grandstream Wave account using the *IP address*, *extension number*,
-and *password*. Then create an account, and select `OnSIP` in the list of carriers. Configure it as
-follows:
-
-- :guilabel:`Account name` = OnSIP
-- :guilabel:`SIP Server` = OnSIP :guilabel:`Domain`
-- :guilabel:`SIP User ID` = OnSIP :guilabel:`Username`
-- :guilabel:`SIP Authentication ID` = OnSIP :guilabel:`Auth Username`
-- :guilabel:`Password` = OnSIP :guilabel:`SIP Password`
-
-Aside from initiating calls from Grandstream Wave on a mobile phone, calls can also be initiated by
-clicking phone numbers in a browser on the computer. This will make Grandstream Wave ring and route
-the call via the phone to the other party. This approach is useful to avoid wasting time dialing
-phone numbers. In order to do so, the Chrome extension is needed `OnSIP Call Assistant
-<https://chrome.google.com/webstore/detail/onsip-call-assistant/pceelmncccldedfkcgjkpemakjbapnpg>`_.
-
-.. warning::
-   The downside of using a softphone on the mobile phone is that your calls will not be logged in
-   Odoo, as the softphone acts as an independent, separate app.
-
-.. seealso::
-   Additional setup and troubleshooting steps can be found on Grandstream's knowledgebase. Visit
-   Grandstream's knowledgebase
-   <https://www.onsip.com/voip-resources/voip-reviews/grandstream-waves>`_.
-
-
+   - :doc:`devices_integrations`
+   - `OnSIP App Download <https://www.onsip.com/app/download>`_
